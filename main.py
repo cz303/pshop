@@ -16,8 +16,7 @@ import Base
 from Key_tg import telegram_key
 from flask import Flask
 
-bot = telebot.TeleBot("885760516:AAEjQvzf89OlPlwv6bzQ_T8IUNYTMcRnlHk", threaded=False)
-
+bot = telebot.TeleBot('885760516:AAEjQvzf89OlPlwv6bzQ_T8IUNYTMcRnlHk')
 app = Flask(__name__)
 sslify = SSLify(app) # Настраиваем шифрование
 
