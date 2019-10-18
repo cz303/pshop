@@ -16,8 +16,7 @@ import Base
 from Key_tg import telegram_key
 from flask import Flask
 
-
-bot = telebot.TeleBot("telegram_key", threaded=False)
+bot = telebot.TeleBot("885760516:AAEjQvzf89OlPlwv6bzQ_T8IUNYTMcRnlHk", threaded=False)
 
 app = Flask(__name__)
 sslify = SSLify(app) # Настраиваем шифрование
@@ -25,7 +24,7 @@ sslify = SSLify(app) # Настраиваем шифрование
 @app.route('/', methods=["POST"])
 def telegram_webhook():
     bot.remove_webhook()
-    bot.set_webhook("https://playps.pythonanywhere.com/" + telegram_key, max_connections=1)
+    bot.set_webhook("https://playps.pythonanywhere.com/" + 885760516:AAEjQvzf89OlPlwv6bzQ_T8IUNYTMcRnlHk, max_connections=1)
     return "OK"
 
 
