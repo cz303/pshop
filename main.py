@@ -23,7 +23,7 @@ sslify = SSLify(app) # Настраиваем шифрование
 @app.route('/', methods=["POST"])
 def telegram_webhook():
     bot.remove_webhook()
-    bot.set_webhook("https://playps.pythonanywhere.com/" + 1065557544:AAEzzrCLkbLD9ikZDhuJ2_vV80L316frYbw, max_connections=1)
+    bot.set_webhook("https://bitpif.herokuapp.com/" + 1065557544:AAEzzrCLkbLD9ikZDhuJ2_vV80L316frYbw, max_connections=1)
     return "OK"
 
 
